@@ -6,7 +6,7 @@ int left=0;
 int right=numsSize-1;
 int mid;
 while(left<=right){
-    mid=(left+right)/2;//更新mid的值
+    mid=(left+right)/2;//要更新mid的值
     if(nums[mid]>target){
         right=mid-1;//这个地方因为我是全闭区间且上面已经判断了目标值和当前中间值不等，于是可以直接排除掉
     }else if(nums[mid]<target){
